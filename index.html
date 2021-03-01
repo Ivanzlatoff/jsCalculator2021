@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>jsCalculator</title>
+    <script src="./js/jsCalcBrain.js"></script>
+    <style>
+        #display {
+            font-size: 3rem;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col">
+                <h1>jsCalculator</h1>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-10">
+                <div id="display" class="bg-info text-white py-4 my-3">0</div>
+            </div>
+            <div class="col-2">
+                <div id="secondaryDisplay" class="bg-secondary text-white py-5 my-3">0</div>
+            </div>
+            </div>
+        </div>
+            <div class="row text-center">
+                <div class="col-6">
+                    <a id="clear" class="btn btn-block btn-danger mb-2 text-white" onclick="clearDisplay()">Clear</a>
+                </div>
+                <div class="col-6">
+                    <a id="negativeValue" class="btn btn-block btn-dark mb-2 text-white" onclick="updateDisplay('negativeValue')">+/-</a>
+                </div>
+            </div>
+        <div class="row text-center">
+            <div class="col-3">
+                <a id="one" class="btn btn-block btn-primary text-white" onclick="updateDisplay(1)">1</a>
+                <a id="four" class="btn btn-block btn-primary text-white" onclick="updateDisplay(4)">4</a>
+                <a id="seven" class="btn btn-block btn-primary text-white" onclick="updateDisplay(7)">7</a>
+                <a id="decimal" class="btn btn-block btn-success text-white" onclick="updateDisplay('decimal')">.</a>
+            </div>
+            <div class="col-3">
+                <a id="two" class="btn btn-block btn-primary text-white" onclick="updateDisplay(2)">2</a>
+                <a id="five" class="btn btn-block btn-primary text-white" onclick="updateDisplay(5)">5</a>
+                <a id="eight" class="btn btn-block btn-primary text-white" onclick="updateDisplay(8)">8</a>
+                <a id="zero" class="btn btn-block btn-primary text-white" onclick="updateDisplay(0)">0</a>
+            </div>
+            <div class="col-3">
+                <a id="three" class="btn btn-block btn-primary text-white" onclick="updateDisplay(3)">3</a>
+                <a id="six" class="btn btn-block btn-primary text-white" onclick="updateDisplay(6)">6</a>
+                <a id="nine" class="btn btn-block btn-primary text-white" onclick="updateDisplay(9)">9</a>
+                <a id="equals" class="btn btn-block btn-success text-white" onclick="updateDisplay('equals')">=</a>
+            </div>
+            <div class="col-3">
+                <a id="add" class="btn btn-block btn-secondary text-white" onclick="updateDisplay('add')">+</a>
+                <a id="subtract" class="btn btn-block btn-secondary text-white" onclick="updateDisplay('subtract')">-</a>
+                <a id="multiply" class="btn btn-block btn-secondary text-white" onclick="updateDisplay('multiply')">*</a>
+                <a id="divide" class="btn btn-block btn-secondary text-white" onclick="updateDisplay('divide')">/</a>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
